@@ -12,7 +12,7 @@ app.use(morgan("dev"));
 
 
 
-app.use("/api/v1/test", require("./routes/testRoute.js"));
+app.use("/api/v1/test", require("./routes/testRoute"));
 
 app.get("/", (req, res) => {
   return res
