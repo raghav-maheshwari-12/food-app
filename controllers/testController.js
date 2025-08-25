@@ -6,7 +6,7 @@ const testUserController = (req, res) => {
     console.log("error In Test API", error);
   }
 };
-
+// exports
 module.exports = { testUserController };
 
 
