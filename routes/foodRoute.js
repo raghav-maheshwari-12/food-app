@@ -37,10 +37,9 @@ router.delete("/delete/:id", authMiddleware, deleteFoodController);
 // PLACE ORDER
 router.post("/placeorder", authMiddleware, placeOrderController);
 
-// ORDER STATUS
+// ORDER STATUS check
 router.post(
-  "/orderStatus/:id",
-  authMiddleware,
+  "/orderStatus/:id" ,authMiddleware,
   adminMiddleware,
   orderStatusController
 );
